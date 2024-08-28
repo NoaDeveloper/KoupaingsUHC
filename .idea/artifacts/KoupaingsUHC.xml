@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="KoupaingsUHC">
+    <output-path>$PROJECT_DIR$/out/artifacts/KoupaingsUHC</output-path>
+    <root id="archive" name="KoupaingsUHC.jar">
+      <element id="module-output" name="KoupaingsUHC" />
+    </root>
+  </artifact>
+</component>
