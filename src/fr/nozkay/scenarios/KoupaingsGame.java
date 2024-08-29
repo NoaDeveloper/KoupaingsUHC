@@ -243,7 +243,7 @@ public class KoupaingsGame extends Gamemode implements Listener {
                     }if(roles.getResi() >= 20){
                         EffectUtil.giveEffect(p,PotionEffectType.DAMAGE_RESISTANCE,3,1);
                     }if(roles.getSpeed() > 0){
-                        p.setWalkSpeed(p.getWalkSpeed() + ((float) roles.getSpeed() /100));
+                        p.setWalkSpeed(p.getWalkSpeed() + ((float) roles.getSpeed() /200));
                     }
                 }
             }

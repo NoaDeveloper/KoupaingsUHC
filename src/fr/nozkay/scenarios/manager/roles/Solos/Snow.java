@@ -60,6 +60,10 @@ public class Snow extends RolesImpl {
                 Player pl = Bukkit.getPlayer(UtilScenar.getRole("§6Snow"));
                 if(pl.getLocation().distance(p.getLocation()) < 15){
                     setResi(7);
+                }else{
+                    if(getResi() > 6){
+                        setResi(getResi() - 7);
+                    }
                 }
             }
         }.runTaskTimer(Main.instance,0,20);

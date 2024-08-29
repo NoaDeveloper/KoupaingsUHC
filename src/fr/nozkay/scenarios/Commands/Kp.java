@@ -77,6 +77,7 @@ public class Kp {
                     Player pl = Bukkit.getPlayer(arg[1]);
                     Random rd = new Random();
                     pl.teleport(new Location(pl.getWorld(),rd.nextInt(400), 80,rd.nextInt(400)));
+                    pouf ++;
                 }
             }
 

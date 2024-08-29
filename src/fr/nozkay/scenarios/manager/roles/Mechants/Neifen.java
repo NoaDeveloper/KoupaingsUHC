@@ -61,6 +61,9 @@ public class Neifen extends RolesImpl {
                         change = 0;
                     }
                     setForce(getForce() + 5);
+                    if(getForce() < 5){
+                        setForce(getForce() + 5);
+                    }
                     for(Player pl: UHCPlayerManager.getPlayingsPlayer()){
                         Roles role = Main.getGame().roles.get(pl.getUniqueId());
                         if(role.isCamp(Camp.MECHANT)){
@@ -78,6 +81,9 @@ public class Neifen extends RolesImpl {
                         }
                     }
                 } else {
+                    if(getForce() > 4){
+                        setForce(getForce() - 5);
+                    }
                     if(change == 3){
                         Title.sendActionBar(p,"§7Forme: §cAjax");
                         change = 2;

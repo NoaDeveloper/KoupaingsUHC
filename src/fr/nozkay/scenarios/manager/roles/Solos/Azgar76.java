@@ -53,6 +53,10 @@ public class Azgar76 extends RolesImpl {
                 Player pl = Bukkit.getPlayer(UtilScenar.getRole("§6Snow"));
                 if(pl.getLocation().distance(p.getLocation()) < 15){
                     setSpeed(7);
+                }else{
+                    if(getSpeed() > 6){
+                        setSpeed(getSpeed() - 7);
+                    }
                 }
             }
         }.runTaskTimer(Main.instance,0,20);
